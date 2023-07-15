@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="container position-relative">
+        <div class="d-flex justify-content-center ">
+            <div class="col shadow p-3 mb-5 bg-body rounded">
+                <div class="text-center m-4">
+                    <h5>SwePhi</h5>
+                </div>
+                <form id="loginform text-wrap">
+                    <div class="m-3">
+                        <label for="contactNumber" class="form-label mt-3">Contact Number</label>
+                        <input type="number" class="form-control" id="contactNumber">
+                    </div>
+                    <div class="m-3">
+                        <label for="completenameInput" class="form-label mt-3">Complete name</label>
+                        <input type="text" class="form-control" placeholder="ex. Jane Doe" id="completenameInput">
+                    </div>
+                    <div class="m-3">
+                        <label for="usernameInput" class="form-label mt-3">Username</label>
+                        <input type="text" class="form-control" placeholder="ex. Jane99" id="usernameInput">
+                    </div>
+                    <div class="m-3">
+                        <div class="col-auto">
+                            <label for="inputPassword6" class="col-form-label">Password</label>
+                            <input type="password" id="inputPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                        <div class="col-auto">
+                            <p id="passwordHelpInline" class="form-text">Must be 8-20 characters long.</p>
+                        </div>
+                    </div>
+                    <div class="m-3">
+                        <div class="col-auto">
+                            <label for="confirmPassword6" class="col-form-label">Confirm Password</label>
+                            <input type="password" id="confirmPassword6" class="form-control" aria-describedby="passwordHelpInline">
+                        </div>
+                    </div>
+                    <div class="m-3 form-check">
+                        <div class="col-auto">
+                            <input type="checkbox" class="form-check-input" id="keepLogin">
+                            <label class="form-check-label" for="keepLogin">Keep me login</label>
+                        </div>
+                        <div class="d-grid gap-2 col-6 mx-auto mt-2">
+                            <button type="submit" class="btn btn-outline-primary shadow mb-2 rounded">Register</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
